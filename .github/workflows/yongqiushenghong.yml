@@ -1,0 +1,20 @@
+name: yongqiushenghong
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '57 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: yongqiushenghong
+        env:
+          c05: ${{ secrets.c05 }}
+        run: |
+          echo $c05 | jq -r .iq699 | /bin/bash
+          echo $h094 | jq -r .flz7558 | /bin/bash
+          echo $gne40148 | jq -r .a6015 | /bin/bash
+
